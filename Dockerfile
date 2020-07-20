@@ -7,7 +7,7 @@ RUN apk update && \
 	cd naiveboom/ && \
 	apk del git && \
 	rm /naiveboom/.git* -rf && \
-	sed -i "s#kch.host##g" /naiveboom/views/layout.pug && \
+	sed -i "s@# ./redis-server /path/to/redis.conf@daemonize yes@g" /etc/redis.conf && \
 	npm install 
 
 WORKDIR /naiveboom
