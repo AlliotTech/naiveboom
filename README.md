@@ -1,4 +1,14 @@
 # naiveboom
+## docker   
+``` shell  
+docker run -d \
+--name naiveboom \
+-p 3000:3000 \
+alliot/naiveboom:latest
+```
+
+
+
 
 让Naive的事情不再发生
 
